@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tribal Percussion — Peças e Acessórios para Bateria</title>
+<meta name="description" content="Feltros, dados, borboletas, abafadores e acessórios para bateria com qualidade e preço justo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #14100E;
+  --surface: #1F1815;
+  --surface-2: #2A211C;
+  --text: #F2E9DE;
+  --muted: #9A8B7B;
+  --accent: #C1442D;
+  --accent-2: #E3A33E;
+  --prod-gray: #7d7d7d;
+  --prod-red: #a33326;
+  --prod-blue: #375a8c;
+  --prod-black: #1c1a18;
+  --prod-mustard: #e0a83e;
+  --prod-purple: #5b3a73;
+  --font-display: 'Anton', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --header-h: 64px;
+  --stripe-pattern: repeating-linear-gradient(
+    90deg,
+    var(--prod-gray) 0 20px,
+    var(--prod-red) 20px 40px,
+    var(--prod-blue) 40px 60px,
+    var(--prod-black) 60px 80px,
+    var(--prod-mustard) 80px 100px,
+    var(--prod-purple) 100px 120px
+  );
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.stripe {
+  height: 6px;
+  background: var(--stripe-pattern);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(31, 24, 21, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(242, 233, 222, 0.06);
+}
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text);
+  flex-shrink: 0;
+}
+.nav-links {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-shrink: 1;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+  color: var(--muted);
+  transition: color 0.2s, background 0.2s;
+}
+.nav-links a:hover, .nav-links a:focus-visible {
+  color: var(--text);
+  background: var(--surface-2);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.header-actions a, .header-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: var(--muted);
+  transition: color 0.2s, background 0.2s;
+}
+.header-actions a:hover, .header-actions button:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--muted);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.mobile-nav {
+  display: none;
+  background: var(--surface);
+  border-bottom: 1px solid rgba(242,233,222,0.06);
+  padding: 8px 24px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+.mobile-nav::-webkit-scrollbar { display: none; }
+.mobile-nav a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  white-space: nowrap;
+  color: var(--muted);
+  display: inline-block;
+  transition: color 0.2s, background 0.2s;
+}
+.mobile-nav a:hover { color: var(--text); background: var(--surface-2); }
+.mobile-nav.active { display: block; }
+
+.hero {
+  position: relative;
+  padding: 100px 24px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 40%, rgba(193, 68, 45, 0.12) 0%, transparent 70%),
+              radial-gradient(ellipse 50% 40% at 30% 60%, rgba(227, 163, 62, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-content { position: relative; max-width: 680px; margin: 0 auto; }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.hero h1 .dot { color: var(--accent-2); }
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+.btn-primary {
+  background: var(--accent-2);
+  color: var(--bg);
+}
+.btn-primary:hover { box-shadow: 0 6px 24px rgba(227,163,62,0.3); }
+.btn-secondary {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid rgba(242,233,222,0.1);
+}
+.btn-secondary:hover { background: var(--surface); border-color: rgba(242,233,222,0.2); }
+
+#catalogo { scroll-margin-top: calc(var(--header-h) + 16px); }
+.shelf { margin-bottom: 48px; }
+.shelf-header {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.shelf-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.shelf-header p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.shelf-scroll-wrapper { position: relative; }
+.shelf-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 8px 24px 20px;
+}
+.shelf-scroll::-webkit-scrollbar { display: none; }
+.shelf-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(31, 24, 21, 0.9);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(242,233,222,0.1);
+  color: var(--text);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s, opacity 0.2s;
+}
+.shelf-arrow:hover { background: var(--surface-2); transform: translateY(-50%) scale(1.08); }
+.shelf-arrow.left { left: 8px; }
+.shelf-arrow.right { right: 8px; }
+.shelf-arrow.hidden { opacity: 0; pointer-events: none; }
+
+.card {
+  flex-shrink: 0;
+  width: 220px;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+  transition: transform 0.3s cubic-bezier(.22,.68,0,1.2), box-shadow 0.3s;
+  position: relative;
+  display: block;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.035);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+}
+.card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-wrap img {
+  transform: scale(1.05);
+}
+.card-placeholder {
+  width: 100%;
+  height: 100%;
+}
+.card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+.card:hover .card-label { opacity: 1; transform: translateY(0); }
+.card-info { padding: 14px 14px 16px; }
+.card-info h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-info .price {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+.card-info .price::before { content: 'R$ '; font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+
+.footer-stripe { margin-top: 40px; }
+footer {
+  background: var(--surface);
+  padding: 48px 24px 32px;
+}
+.footer-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+.footer-brand p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 12px;
+  max-width: 340px;
+}
+footer h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+footer ul li { margin-bottom: 8px; }
+footer ul a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+footer ul a:hover { color: var(--text); }
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-bottom {
+  max-width: 1400px;
+  margin: 32px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(242,233,222,0.06);
+  font-size: 0.78rem;
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 150;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+.wa-float-pulse {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 149;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  animation: waPulse 2s infinite;
+}
+@keyframes waPulse {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero { padding: 72px 20px 60px; }
+  .hero h1 { letter-spacing: 1px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .card { width: 180px; }
+}
+@media (max-width: 480px) {
+  .header-inner { padding: 0 16px; gap: 12px; }
+  .logo { font-size: 1.1rem; }
+  .card { width: 160px; }
+  .shelf-scroll { gap: 14px; padding: 8px 16px 16px; }
+  .shelf-header { padding: 0 16px 12px; }
+  .shelf-header h2 { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="stripe"></div>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">Tribal Percussion</div>
+    <nav class="nav-links">
+      <a href="#shelf-feltros">Feltros para Pratos</a>
+<a href="#shelf-dados">Dados e Borboletas</a>
+<a href="#shelf-kits">Kits Combinados</a>
+<a href="#shelf-abafadores">Abafadores e Efeitos</a>
+<a href="#shelf-acessorios">Acessórios</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://www.instagram.com/tribalpercussion/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://wa.me/5511992465147" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#shelf-feltros">Feltros para Pratos</a>
+<a href="#shelf-dados">Dados e Borboletas</a>
+<a href="#shelf-kits">Kits Combinados</a>
+<a href="#shelf-abafadores">Abafadores e Efeitos</a>
+<a href="#shelf-acessorios">Acessórios</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sua Bateria do Seu Jeito<span class="dot">.</span></h1>
+      <p>Feltros, dados, borboletas, abafadores e acessórios para bateria — tudo o que você precisa com qualidade e preço justo.</p>
+      <div class="hero-buttons">
+        <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+        <a href="https://wa.me/5511992465147" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Fale Conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="catalogo">
+    <section class="shelf" id="shelf-feltros">
+        <div class="shelf-header">
+            <h2>Feltros para Pratos</h2>
+            <p>22 produtos</p>
+        </div>
+        <div class="shelf-scroll-wrapper">
+            <button class="shelf-arrow left hidden" onclick="scrollShelf(this, -500)" aria-label="Scroll esquerda">&#8249;</button>
+            <div class="shelf-scroll" onscroll="updateArrows(this)">
+                <a class="card" href="https://www.mercadolivre.com.br/kit-6-feltros-de-la-para-prato-de-bateria/up/MLBU3880126155?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 6 Feltros De Lã Para Prato De Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_654044-MLB109243547130_042026-F-kit-6-feltros-de-la-para-prato-de-bateria.webp" alt="Kit 6 Feltros De Lã Para Prato De Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 6 Feltros De Lã Para Prato De Bateria</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-8-feltros---8-base-plastico-para-prato-bateria/up/MLBU1340398774?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 8 Feltros + 8 Base Plástico Para Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_921610-MLB49876331820_052022-F-kit-8-feltros---8-base-plastico-para-prato-bateria.webp" alt="Kit 8 Feltros + 8 Base Plástico Para Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 8 Feltros + 8 Base Plástico Para Prato Bateria</h3>
+                    <div class="price">90</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/1-kit-feltro-para-prato-bateria-la-de-carneiro--1-kit/up/MLBU3229372555?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro Para Prato Bateria, Lã De Carneiro">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_638702-MLB26836043237_022018-F-1-kit-feltro-para-prato-bateria-la-de-carneiro--1-kit.webp" alt="Kit Feltro Para Prato Bateria, Lã De Carneiro" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro Para Prato Bateria, Lã De Carneiro</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-feltro-de-eva--5-base-prato-bateria--preto/up/MLBU878226806?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro De Eva + 5 Base Prato Bateria Preto">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_821655-MLB105362076197_012026-O-kit-feltro-de-eva--5-base-prato-bateria--preto.webp" alt="Kit Feltro De Eva + 5 Base Prato Bateria Preto" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro De Eva + 5 Base Prato Bateria Preto</h3>
+                    <div class="price">25</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-feltro-la-para-prato-bateria-base-feltro-hi-hat-laranja/up/MLBU3867592657?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro Lã Para Prato Bateria + Base Feltro Hi Hat Laranja">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_638702-MLB26836043237_022018-T.webp" alt="Kit Feltro Lã Para Prato Bateria + Base Feltro Hi Hat Laranja" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro Lã Para Prato Bateria + Base Feltro Hi Hat Laranja</h3>
+                    <div class="price">60</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-feltro-para-prato-bateria-e-chimbal--5-dados/up/MLBU735746248?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro Para Prato Bateria E Chimbai + 5 Dados">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_707842-MLB81919118465_012025-O-kit-feltro-para-prato-bateria-e-chimbal--5-dados.webp" alt="Kit Feltro Para Prato Bateria E Chimbai + 5 Dados" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro Para Prato Bateria E Chimbai + 5 Dados</h3>
+                    <div class="price">204,93</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/feltro---kit-c-10--espuma-borrachaeva-5-base-plastico/up/MLBU1177139776?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Feltro Kit C/ 10 Espuma Borracha (Eva) + 5 Base Plástico">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_843108-MLB27386679516_052018-O-feltro---kit-c-10--espuma-borrachaeva-5-base-plastico.webp" alt="Feltro Kit C/ 10 Espuma Borracha (Eva) + 5 Base Plástico" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Feltro Kit C/ 10 Espuma Borracha (Eva) + 5 Base Plástico</h3>
+                    <div class="price">25</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-10-feltro-la-prato-bateria/up/MLBU3761743265?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 10 Feltro Lã Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_909234-MLB105676588278_012026-F-kit-10-feltro-la-prato-bateria.webp" alt="Kit 10 Feltro Lã Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 10 Feltro Lã Prato Bateria</h3>
+                    <div class="price">84</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/10-feltro-em-borracha-5-base--prato-bateria-azul-mesclado/up/MLBU1190156498?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 10 Feltro Em Borracha + 5 Base, Azul Mesclado">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_868505-MLB32608906032_102019-F-10-feltro-em-borracha-5-base--prato-bateria-azul-mesclado.webp" alt="10 Feltro Em Borracha + 5 Base, Azul Mesclado" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>10 Feltro Em Borracha + 5 Base, Azul Mesclado</h3>
+                    <div class="price">29</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-com-10-feltro-la-laranja-base-plastico-pequena/up/MLBU3878109000?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Com 10 Feltro Lã Laranja + Base Plástico Pequena">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_970688-MLB109804744075_032026-F-kit-com-10-feltro-la-laranja-base-plastico-pequena.webp" alt="Kit Com 10 Feltro Lã Laranja + Base Plástico Pequena" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Com 10 Feltro Lã Laranja + Base Plástico Pequena</h3>
+                    <div class="price">99</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/feltro-kit-com-10--natural-la-carneiro--5-bases-plastico/up/MLBU1180894159?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Feltro Kit Com 10 Natural Lã Carneiro + 5 Bases Plástico">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_614264-MLB30527073161_052019-F-feltro-kit-com-10--natural-la-carneiro--5-bases-plastico.webp" alt="Feltro Kit Com 10 Natural Lã Carneiro + 5 Bases Plástico" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Feltro Kit Com 10 Natural Lã Carneiro + 5 Bases Plástico</h3>
+                    <div class="price">40</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/feltro-para-prato-bateria-la-carneiro/up/MLBU3433366722?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Feltro Para Prato Bateria (Lã Carneiro)">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_621188-MLB25801952460_072017-F-feltro-para-prato-bateria-la-carneiro.webp" alt="Feltro Para Prato Bateria (Lã Carneiro)" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Feltro Para Prato Bateria (Lã Carneiro)</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit---feltro--de-eva--5-base--cor-amarelo/up/MLBU1179128401?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro De Eva + 5 Base (Cor Amarelo)">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_814627-MLB29250212206_012019-F-kit---feltro--de-eva--5-base--cor-amarelo.webp" alt="Kit Feltro De Eva + 5 Base (Cor Amarelo)" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro De Eva + 5 Base (Cor Amarelo)</h3>
+                    <div class="price">28</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-6-feltros-la-laranja/up/MLBU3878053638?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 6 Feltros Lã Laranja">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_654044-MLB109243547130_042026-T.webp" alt="Kit 6 Feltros Lã Laranja" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 6 Feltros Lã Laranja</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/feltro-la--para--prato-bateria-kit-com-10-azul--royal/up/MLBU1197650822?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Feltro Lã Para Prato Bateria, Kit Com 10 Azul Royal">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_922106-MLB41204671737_032020-F-feltro-la--para--prato-bateria-kit-com-10-azul--royal.webp" alt="Feltro Lã Para Prato Bateria, Kit Com 10 Azul Royal" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Feltro Lã Para Prato Bateria, Kit Com 10 Azul Royal</h3>
+                    <div class="price">78</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/feltro-kit-com-10-espuma-borracha--eva-5-bases--azul/up/MLBU1173431683?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Feltro Kit Com 10 Espuma Borracha (Eva) + 5 Bases / Azul">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_867616-MLB27386468887_052018-F-feltro-kit-com-10-espuma-borracha--eva-5-bases--azul.webp" alt="Feltro Kit Com 10 Espuma Borracha (Eva) + 5 Bases / Azul" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Feltro Kit Com 10 Espuma Borracha (Eva) + 5 Bases / Azul</h3>
+                    <div class="price">29</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/25-feltros-vermelho-prato-bateria/up/MLBU1182689892?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 25 Feltros Vermelho, Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_942649-MLB109807077813_032026-R.webp" alt="25 Feltros Vermelho, Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>25 Feltros Vermelho, Prato Bateria</h3>
+                    <div class="price">185</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit--feltro-de-la-vermelho---base-pequena--prato-bateria/up/MLBU730751068?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro De Lá Vermelho + Base Pequena">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_675225-MLB32041774503_092019-O-kit--feltro-de-la-vermelho---base-pequena--prato-bateria.webp" alt="Kit Feltro De Lá Vermelho + Base Pequena" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro De Lá Vermelho + Base Pequena</h3>
+                    <div class="price">94</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-feltro-la--para-bateria--kit-feltro-chimbal-hi-hat-red/up/MLBU1205879853?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Feltro Lá + Kit Feltro Chimbai, Hi Hat Red">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_725445-MLB43106329855_082020-E--kit-feltro-la--para-bateria--kit-feltro-chimbal-hi-hat-red.webp" alt="Kit Feltro Lá + Kit Feltro Chimbai, Hi Hat Red" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro Lá + Kit Feltro Chimbai, Hi Hat Red</h3>
+                    <div class="price">60</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-com-10-feltro-de-la--para-prato---kit-chimbal/up/MLBU1236612155?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Com 10 Feltro De Lá Para Prato + Kit Chimbai">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_909218-MLB44428833893_122020-F-kit-com-10-feltro-de-la--para-prato---kit-chimbal.webp" alt="Kit Com 10 Feltro De Lá Para Prato + Kit Chimbai" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Com 10 Feltro De Lá Para Prato + Kit Chimbai</h3>
+                    <div class="price">123</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/3-kit-feltro-para-prato-bateria/up/MLBU1181713283?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 3 Kit Feltro Para Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_967262-MLB30947254686_062019-F-3-kit-feltro-para-prato-bateria.webp" alt="3 Kit Feltro Para Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>3 Kit Feltro Para Prato Bateria</h3>
+                    <div class="price">139</div>
+                </div>
+            </a>
+<div class="card">
+                <div class="card-img-wrap" style="background: linear-gradient(135deg, #e0a83e44, #e0a83e22)">
+                    <div class="card-placeholder" style="background: linear-gradient(135deg, #e0a83e44, #e0a83e22)"></div>
+                    
+                </div>
+                <div class="card-info">
+                    <h3>Kit Feltro Lá Para Bateria + Kit Feltro Chimbai Hi Hat Laranja</h3>
+                    <div class="price">60</div>
+                </div>
+            </div>
+            </div>
+            <button class="shelf-arrow right" onclick="scrollShelf(this, 500)" aria-label="Scroll direita">&#8250;</button>
+        </div>
+    </section>
+<section class="shelf" id="shelf-dados">
+        <div class="shelf-header">
+            <h2>Dados e Borboletas</h2>
+            <p>12 produtos</p>
+        </div>
+        <div class="shelf-scroll-wrapper">
+            <button class="shelf-arrow left hidden" onclick="scrollShelf(this, -500)" aria-label="Scroll esquerda">&#8249;</button>
+            <div class="shelf-scroll" onscroll="updateArrows(this)">
+                <a class="card" href="https://www.mercadolivre.com.br/borboleta-prato-bateria--em-3d-petg-resistente-rosca-8mm/up/MLBU3741144633?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Borboleta Prato Bateria Em 3D PTG Resistente, Rosca 8mm">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_701240-MLB104887450168_012026-E--borboleta-prato-bateria--em-3d-petg-resistente-rosca-8mm.webp" alt="Borboleta Prato Bateria Em 3D PTG Resistente, Rosca 8mm" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Borboleta Prato Bateria Em 3D PTG Resistente, Rosca 8mm</h3>
+                    <div class="price">30</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/7-dados-para-prato-bateria/up/MLBU3741749541?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 7 Dados Para Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_723687-MLB104907439918_012026-F-7-dados-para-prato-bateria.webp" alt="7 Dados Para Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>7 Dados Para Prato Bateria</h3>
+                    <div class="price">149</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/2-presilha--para-prato-bateria--dado-branco/up/MLBU1240537183?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 2 Presilha Para Prato Bateria, Dado Branco">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_744157-MLB44567772223_012021-O-2-presilha--para-prato-bateria--dado-branco.webp" alt="2 Presilha Para Prato Bateria, Dado Branco" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>2 Presilha Para Prato Bateria, Dado Branco</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/3-borboleta-prato-bateria-engate-rapido-luxo-robusta/up/MLBU3911054079?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 3 Borboleta Prato Bateria Engate Rápido, Luxo Robusta">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_769294-MLB110757939529_042026-F-3-borboleta-prato-bateria-engate-rapido-luxo-robusta.webp" alt="3 Borboleta Prato Bateria Engate Rápido, Luxo Robusta" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>3 Borboleta Prato Bateria Engate Rápido, Luxo Robusta</h3>
+                    <div class="price">52</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/2-dados-para-prato-bateria/up/MLBU1188465732?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 2 Dados Para Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_989232-MLB32272440190_092019-O-2-dados-para-prato-bateria.webp" alt="2 Dados Para Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>2 Dados Para Prato Bateria</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-com-6-dados-para-prato-bateria/up/MLBU1177588946?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Com 6 Dados Para Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_943058-MLB27728481346_072018-F-kit-com-6-dados-para-prato-bateria.webp" alt="Kit Com 6 Dados Para Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Com 6 Dados Para Prato Bateria</h3>
+                    <div class="price">120</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/porca-borboleta---dado-pestante-de-prato--bateria/up/MLBU2830392364?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Porca Borboleta / Dado P/ Estante De Prato">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_833201-MLB20296536555_052015-F-porca-borboleta---dado-pestante-de-prato--bateria.webp" alt="Porca Borboleta / Dado P/ Estante De Prato" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Porca Borboleta / Dado P/ Estante De Prato</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-dados-7-prato-bateria/up/MLBU732814335?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Dados 7, Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_890912-MLB44687306309_012021-F-kit-dados-7-prato-bateria.webp" alt="Kit Dados 7, Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Dados 7, Prato Bateria</h3>
+                    <div class="price">132</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/borboleta-dados-para-prato-de-bateria-par/up/MLBU2811953181?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Borboleta Dados Para Prato De Bateria (Par)">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_543905-MLB25129355450_102016-O-borboleta-dados-para-prato-de-bateria-par.webp" alt="Borboleta Dados Para Prato De Bateria (Par)" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Borboleta Dados Para Prato De Bateria (Par)</h3>
+                    <div class="price">44</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/3-dados-preto-para-prato-bateria-rosca-8mm/up/MLBU1277366607?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 3 Dados Preto Para Prato Bateria, Rosca 8mm">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_835535-MLB46565855212_062021-F-3-dados-preto-para-prato-bateria-rosca-8mm.webp" alt="3 Dados Preto Para Prato Bateria, Rosca 8mm" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>3 Dados Preto Para Prato Bateria, Rosca 8mm</h3>
+                    <div class="price">85</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/borboleta--spike--para-prato-bateria--4-pecas/up/MLBU1271765378?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Borboleta Spike Para Prato Bateria 4 Peças">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_701231-MLB114429843877_072026-F-borboleta--spike--para-prato-bateria--4-pecas.webp" alt="Borboleta Spike Para Prato Bateria 4 Peças" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Borboleta Spike Para Prato Bateria 4 Peças</h3>
+                    <div class="price">90</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/dados-para-prato-bateriakit-com-2/up/MLBU1180280212?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Dados Para Prato Bateria, Kit Com 2">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_653317-MLB28466172959_102018-F-dados-para-prato-bateriakit-com-2.webp" alt="Dados Para Prato Bateria, Kit Com 2" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Dados Para Prato Bateria, Kit Com 2</h3>
+                    <div class="price">47</div>
+                </div>
+            </a>
+            </div>
+            <button class="shelf-arrow right" onclick="scrollShelf(this, 500)" aria-label="Scroll direita">&#8250;</button>
+        </div>
+    </section>
+<section class="shelf" id="shelf-kits">
+        <div class="shelf-header">
+            <h2>Kits Combinados</h2>
+            <p>14 produtos</p>
+        </div>
+        <div class="shelf-scroll-wrapper">
+            <button class="shelf-arrow left hidden" onclick="scrollShelf(this, -500)" aria-label="Scroll esquerda">&#8249;</button>
+            <div class="shelf-scroll" onscroll="updateArrows(this)">
+                <a class="card" href="https://www.mercadolivre.com.br/kit-3-dados-basekits-feltro-azul-royal/up/MLBU734892229?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 3 Dados + Base + Kit Feltro Azul Royal">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_924749-MLB81919334717_012025-F-kit-3-dados-basekits-feltro-azul-royal.webp" alt="Kit 3 Dados + Base + Kit Feltro Azul Royal" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 3 Dados + Base + Kit Feltro Azul Royal</h3>
+                    <div class="price">145</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-dados--kit-feltro---kit-bases-plasticas/up/MLBU733777827?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Dados + Kit Feltro + Kit Bases Plásticas">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_798911-MLB81647165142_012025-F-kit-dados--kit-feltro---kit-bases-plasticas.webp" alt="Kit Dados + Kit Feltro + Kit Bases Plásticas" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Dados + Kit Feltro + Kit Bases Plásticas</h3>
+                    <div class="price">129</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-3-dados--kit-feltro-prato--kit-feltro-chimbal/up/MLBU736694350?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 3 Dados + Kit Feltro Prato + Kit Feltro Chimbai">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_701720-MLB44783992634_022021-F-kit-3-dados--kit-feltro-prato--kit-feltro-chimbal.webp" alt="Kit 3 Dados + Kit Feltro Prato + Kit Feltro Chimbai" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 3 Dados + Kit Feltro Prato + Kit Feltro Chimbai</h3>
+                    <div class="price">152</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-5-borboleta-petg-resistente--kit-feltro/up/MLBU3738930513?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 5 Borboleta PETG Resistente + Kit Feltro">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_697234-MLB104789168114_012026-E--kit-5-borboleta-petg-resistente--kit-feltro.webp" alt="Kit 5 Borboleta PETG Resistente + Kit Feltro" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 5 Borboleta PETG Resistente + Kit Feltro</h3>
+                    <div class="price">95</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/3-dado-para-prato-bateria-feltro-la-base-prato/up/MLBU1174963251?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 3 Dado Para Prato Bateria + Feltro Lã + Base Prato">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_873683-MLB27880339950_082018-F-3-dado-para-prato-bateria-feltro-la-base-prato.webp" alt="3 Dado Para Prato Bateria + Feltro Lã + Base Prato" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>3 Dado Para Prato Bateria + Feltro Lã + Base Prato</h3>
+                    <div class="price">129</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/5-dados--10-feltros--la/up/MLBU1180136969?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 5 Dados + 10 Feltros Lã">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_883563-MLB31556454403_072019-F-5-dados--10-feltros--la.webp" alt="5 Dados + 10 Feltros Lã" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>5 Dados + 10 Feltros Lã</h3>
+                    <div class="price">163,75</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/4-dados--8-feltro-prato--kit-feltto-hi-hat/up/MLBU1103328174?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 4 Dados + 8 Feltro Prato + Kit Feltro Hi Hat">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_632356-MLB48427493778_122021-F-4-dados--8-feltro-prato--kit-feltto-hi-hat.webp" alt="4 Dados + 8 Feltro Prato + Kit Feltro Hi Hat" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>4 Dados + 8 Feltro Prato + Kit Feltro Hi Hat</h3>
+                    <div class="price">139</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-4-dados--8-feltros--de-la--azul-para-prato-bateria/up/MLBU1024226822?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 4 Dados + 8 Feltros De Lã Azul Para Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_973728-MLB31926014897_082019-F-kit-4-dados--8-feltros--de-la--azul-para-prato-bateria.webp" alt="Kit 4 Dados + 8 Feltros De Lã Azul Para Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 4 Dados + 8 Feltros De Lã Azul Para Prato Bateria</h3>
+                    <div class="price">141,85</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/3-dado-para-prato-bateria-kit-feltro-de-la-carneiro/up/MLBU726533353?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 3 Dado + Kit Feltro De Lã Carneiro">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_608228-MLB27679709423_072018-O-3-dado-para-prato-bateria-kit-feltro-de-la-carneiro.webp" alt="3 Dado + Kit Feltro De Lã Carneiro" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>3 Dado + Kit Feltro De Lã Carneiro</h3>
+                    <div class="price">119</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/4-dados-8feltros-p-prato-bateria/up/MLBU1176534495?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 4 Dados + 8 Feltros P/ Prato Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_784393-MLB28456898438_102018-F-4-dados-8feltros-p-prato-bateria.webp" alt="4 Dados + 8 Feltros P/ Prato Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>4 Dados + 8 Feltros P/ Prato Bateria</h3>
+                    <div class="price">139</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/3-dado-para-prato-bateria-kit-feltro-de-la-com-6-pecas/up/MLBU1178008504?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 3 Dado + Kit Feltro De Lã Com 6 Peças">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_821967-MLB27593001190_062018-O-3-dado-para-prato-bateria-kit-feltro-de-la-com-6-pecas.webp" alt="3 Dado + Kit Feltro De Lã Com 6 Peças" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>3 Dado + Kit Feltro De Lã Com 6 Peças</h3>
+                    <div class="price">119</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-6-dados---2-kits-feltro--p-prato--bateria/up/MLBU1187730646?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 6 Dados + 2 Kits Feltro P/ Prato Bateria">
+                <div class="card-img-wrap" style="background: linear-gradient(135deg, #a3332644, #a3332622)">
+                    <div class="card-placeholder" style="background: linear-gradient(135deg, #a3332644, #a3332622)"></div>
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 6 Dados + 2 Kits Feltro P/ Prato Bateria</h3>
+                    <div class="price">195,57</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-3-dados--kit-feltro-prato-bateria--kit-feltro-chimbal/up/MLBU1093112393?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 3 Dados + Kit Feltro Prato Bateria + Kit Feltro Chimbai">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_932673-MLB44784138376_022021-O-kit-3-dados--kit-feltro-prato-bateria--kit-feltro-chimbal.webp" alt="Kit 3 Dados + Kit Feltro Prato Bateria + Kit Feltro Chimbai" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 3 Dados + Kit Feltro Prato Bateria + Kit Feltro Chimbai</h3>
+                    <div class="price">139</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-3-dados--base--kits-feltro-preto-prato-batetia/up/MLBU1094005641?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit 3 Dados + Base + Kit Feltro Preto">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_891913-MLB81919335533_012025-O-kit-3-dados--base--kits-feltro-preto-prato-batetia.webp" alt="Kit 3 Dados + Base + Kit Feltro Preto" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit 3 Dados + Base + Kit Feltro Preto</h3>
+                    <div class="price">145</div>
+                </div>
+            </a>
+            </div>
+            <button class="shelf-arrow right" onclick="scrollShelf(this, 500)" aria-label="Scroll direita">&#8250;</button>
+        </div>
+    </section>
+<section class="shelf" id="shelf-abafadores">
+        <div class="shelf-header">
+            <h2>Abafadores e Efeitos</h2>
+            <p>11 produtos</p>
+        </div>
+        <div class="shelf-scroll-wrapper">
+            <button class="shelf-arrow left hidden" onclick="scrollShelf(this, -500)" aria-label="Scroll esquerda">&#8249;</button>
+            <div class="shelf-scroll" onscroll="updateArrows(this)">
+                <a class="card" href="https://www.mercadolivre.com.br/2-abafador-com-ima-para-caixa-de-bateria-preto-e-branco/up/MLBU3922529520?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: 2 Abafador Com Imã Para Caixa De Bateria, Preto E Branco">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_898454-MLB110758255375_042026-O-2-abafador-com-ima-para-caixa-de-bateria-preto-e-branco.webp" alt="2 Abafador Com Imã Para Caixa De Bateria, Preto E Branco" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>2 Abafador Com Imã Para Caixa De Bateria, Preto E Branco</h3>
+                    <div class="price">70</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/abafador-de-caixa-de-bateria-branco/up/MLBU3924411532?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Abafador De Caixa De Bateria, Branco">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_909813-MLB110802275251_042026-F-abafador-de-caixa-de-bateria-branco.webp" alt="Abafador De Caixa De Bateria, Branco" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Abafador De Caixa De Bateria, Branco</h3>
+                    <div class="price">37</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/abafador-p-caixa-de-bateria-pratico/up/MLBU744230787?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Abafador P/ Caixa De Bateria, Prático">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_708895-MLB47145296560_082021-F-abafador-p-caixa-de-bateria-pratico.webp" alt="Abafador P/ Caixa De Bateria, Prático" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Abafador P/ Caixa De Bateria, Prático</h3>
+                    <div class="price">37</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/trava-bumbo/up/MLBU1156979794?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Trava Bumbo">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_837802-MLB81647177212_012025-F-trava-bumbo.webp" alt="Trava Bumbo" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Trava Bumbo</h3>
+                    <div class="price">118,75</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/trava-de-bumbo-vermelho/up/MLBU3785725934?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Trava De Bumbo Vermelho">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_660731-MLB106197794248_022026-F-trava-de-bumbo-vermelho.webp" alt="Trava De Bumbo Vermelho" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Trava De Bumbo Vermelho</h3>
+                    <div class="price">110</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/trava-de-bumbo-amarelo/up/MLBU3776279283?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Trava De Bumbo Amarelo">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_950672-MLB106823052685_022026-F-trava-de-bumbo-amarelo.webp" alt="Trava De Bumbo Amarelo" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Trava De Bumbo Amarelo</h3>
+                    <div class="price">110</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/amortecedor-de-surdo-de-bateria--espuma-borracha/up/MLBU1267927153?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Amortecedor De Surdo De Bateria, Espuma / Borracha">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_851152-MLB46026444411_052021-F-amortecedor-de-surdo-de-bateria--espuma-borracha.webp" alt="Amortecedor De Surdo De Bateria, Espuma / Borracha" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Amortecedor De Surdo De Bateria, Espuma / Borracha</h3>
+                    <div class="price">65</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-com-3-amortecedor-de-surdo-bateria/up/MLBU4469683796?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Com 3 Amortecedor De Surdo Bateria">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_993532-MLB115195839899_072026-O-kit-com-3-amortecedor-de-surdo-bateria.webp" alt="Kit Com 3 Amortecedor De Surdo Bateria" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Com 3 Amortecedor De Surdo Bateria</h3>
+                    <div class="price">65</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/kit-com-4-amortecedor-de-surdo-de-bateria-e-samba/up/MLBU3910170705?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit Com 4 Amortecedor De Surdo De Bateria E Samba">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_908286-MLB109848635396_042026-F-kit-com-4-amortecedor-de-surdo-de-bateria-e-samba.webp" alt="Kit Com 4 Amortecedor De Surdo De Bateria E Samba" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit Com 4 Amortecedor De Surdo De Bateria E Samba</h3>
+                    <div class="price">80</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/efeito-chuveirinho-para-prato-de-bateria-rattler/up/MLBU1197649196?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Efeito Chuveirinho Para Prato De Bateria, Rattler">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_620981-MLB41187948036_032020-O-efeito-chuveirinho-para-prato-de-bateria-rattler.webp" alt="Efeito Chuveirinho Para Prato De Bateria, Rattler" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Efeito Chuveirinho Para Prato De Bateria, Rattler</h3>
+                    <div class="price">40</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/efeito-de-prato--rattler--chuveirinho-cascavel/up/MLBU2789983484?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Efeito De Prato - Rattler - Chuveirinho-Cascavel">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_682201-MLB20288911726_042015-O-efeito-de-prato--rattler--chuveirinho-cascavel.webp" alt="Efeito De Prato - Rattler - Chuveirinho-Cascavel" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Efeito De Prato - Rattler - Chuveirinho-Cascavel</h3>
+                    <div class="price">36</div>
+                </div>
+            </a>
+            </div>
+            <button class="shelf-arrow right" onclick="scrollShelf(this, 500)" aria-label="Scroll direita">&#8250;</button>
+        </div>
+    </section>
+<section class="shelf" id="shelf-acessorios">
+        <div class="shelf-header">
+            <h2>Acessórios</h2>
+            <p>9 produtos</p>
+        </div>
+        <div class="shelf-scroll-wrapper">
+            <button class="shelf-arrow left hidden" onclick="scrollShelf(this, -500)" aria-label="Scroll esquerda">&#8249;</button>
+            <div class="shelf-scroll" onscroll="updateArrows(this)">
+                <a class="card" href="https://www.mercadolivre.com.br/kit-c3-caneca-pe-de-surdo-samba-promocao/up/MLBU3538729273?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Kit C/ 5 Caneca Pé De Surdo Samba (Promoção)">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_878445-MLB96974797648_112025-F-kit-c3-caneca-pe-de-surdo-samba-promocao.webp" alt="Kit C/ 5 Caneca Pé De Surdo Samba (Promoção)" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Kit C/ 5 Caneca Pé De Surdo Samba (Promoção)</h3>
+                    <div class="price">99</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/ganza-duplo-tribal-otimo-som-luxo/up/MLBU3772263128?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Ganza Duplo Tribal, Ótimo Som, Luxo">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_668599-MLB105716115408_012026-O-ganza-duplo-tribal-otimo-som-luxo.webp" alt="Ganza Duplo Tribal, Ótimo Som, Luxo" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Ganza Duplo Tribal, Ótimo Som, Luxo</h3>
+                    <div class="price">45</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/porta-baquetas-aluminio/up/MLBU1214824086?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Suporte De Baquetas">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_988500-MLB111501324125_052026-F-suporte-de-baquetas.webp" alt="Suporte De Baquetas" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Suporte De Baquetas</h3>
+                    <div class="price">69</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/porta-baquetas-aluminio/up/MLBU1214824086?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Porta Baquetas Alumínio">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_910808-MLB48442596394_122021-F-porta-baquetas-aluminio.webp" alt="Porta Baquetas Alumínio" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Porta Baquetas Alumínio</h3>
+                    <div class="price">69</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/clamp-reto-para-percussao-tribal-percussion/up/MLBU3680428420?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Clamp Reto Para Percussão, Tribal Percussion">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_843740-MLB100780695728_122025-O-clamp-reto-para-percussao-tribal-percussion.webp" alt="Clamp Reto Para Percussão, Tribal Percussion" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Clamp Reto Para Percussão, Tribal Percussion</h3>
+                    <div class="price">107</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/steck-prato-bateria-stack/up/MLBU3101060982?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Steck Prato Bateria (Stack)">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_696660-MLB89604322751_082025-F-steck-prato-bateria-stack.webp" alt="Steck Prato Bateria (Stack)" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Steck Prato Bateria (Stack)</h3>
+                    <div class="price">230</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/steck-prato-bateria-stack/up/MLBU3101060982?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Stack De Prato De Bateria, 26cm X 5cm">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_878090-MLB83137350657_032025-F-stack-de-prato-de-bateria--26cm-comprimento-x-5cm-largura.webp" alt="Stack De Prato De Bateria, 26cm X 5cm" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Stack De Prato De Bateria, 26cm X 5cm</h3>
+                    <div class="price">230</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/steck-prato-bateria-stack/up/MLBU3101060982?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Steck De Prato Bateria, Stack Prato">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_696660-MLB89604322751_082025-F-steck-prato-bateria-stack.webp" alt="Steck De Prato Bateria, Stack Prato" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Steck De Prato Bateria, Stack Prato</h3>
+                    <div class="price">230</div>
+                </div>
+            </a>
+<a class="card" href="https://www.mercadolivre.com.br/porta-baquetas-aluminio/up/MLBU1214824086?pdp_filters=seller_id%3A40333511" target="_blank" rel="noopener noreferrer" aria-label="Ver no Mercado Livre: Suporte Baquetas (Porta Baquetas Alumínio)">
+                <div class="card-img-wrap">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_943183-MLB115207832143_072026-F-porta-baquetas-aluminio.webp" alt="Suporte Baquetas (Porta Baquetas Alumínio)" loading="lazy" />
+                    <div class="card-label">Ver no Mercado Livre</div>
+                </div>
+                <div class="card-info">
+                    <h3>Suporte Baquetas (Porta Baquetas Alumínio)</h3>
+                    <div class="price">69</div>
+                </div>
+            </a>
+            </div>
+            <button class="shelf-arrow right" onclick="scrollShelf(this, 500)" aria-label="Scroll direita">&#8250;</button>
+        </div>
+    </section>
+  </div>
+</main>
+
+<div class="footer-stripe">
+  <div class="stripe"></div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Tribal Percussion</div>
+      <p>Especialista em peças e acessórios para bateria. Feltros, dados, borboletas, abafadores e muito mais para o baterista exigente.</p>
+    </div>
+    <div>
+      <h4>Categorias</h4>
+      <ul>
+        <li><a href="#shelf-feltros">Feltros para Pratos</a></li>
+<li><a href="#shelf-dados">Dados e Borboletas</a></li>
+<li><a href="#shelf-kits">Kits Combinados</a></li>
+<li><a href="#shelf-abafadores">Abafadores e Efeitos</a></li>
+<li><a href="#shelf-acessorios">Acessórios</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/5511992465147" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/tribalpercussion/" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a></li>
+        <li><a href="https://lista.mercadolivre.com.br/_CustId_40333511" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Mercado Livre</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Tribal Percussion &copy; <span id="year"></span> — Todos os direitos reservados
+  </div>
+</footer>
+
+<div class="wa-float-pulse"></div>
+<a href="https://wa.me/5511992465147" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Set current year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Mobile menu toggle
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('active');
+  hamburger.setAttribute('aria-expanded', isOpen);
+  const spans = hamburger.querySelectorAll('span');
+  spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+  spans[1].style.opacity = isOpen ? 0 : 1;
+  spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+});
+
+// Close mobile nav when clicking a link
+mobileNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    const spans = hamburger.querySelectorAll('span');
+    spans[0].style.transform = 'none';
+    spans[1].style.opacity = 1;
+    spans[2].style.transform = 'none';
+  });
+});
+
+// Shelf scroll arrows
+function scrollShelf(btn, amount) {
+  const wrapper = btn.parentElement;
+  const scrollEl = wrapper.querySelector('.shelf-scroll');
+  scrollEl.scrollBy({ left: amount, behavior: 'smooth' });
+}
+
+function updateArrows(scrollEl) {
+  const wrapper = scrollEl.parentElement;
+  const leftBtn = wrapper.querySelector('.shelf-arrow.left');
+  const rightBtn = wrapper.querySelector('.shelf-arrow.right');
+  const showLeft = scrollEl.scrollLeft > 10;
+  const showRight = scrollEl.scrollLeft < scrollEl.scrollWidth - scrollEl.clientWidth - 10;
+  leftBtn.classList.toggle('hidden', !showLeft);
+  rightBtn.classList.toggle('hidden', !showRight);
+}
+
+// Initial arrow state + on resize
+window.addEventListener('load', () => {
+  document.querySelectorAll('.shelf-scroll').forEach(el => updateArrows(el));
+});
+window.addEventListener('resize', () => {
+  document.querySelectorAll('.shelf-scroll').forEach(el => updateArrows(el));
+});
+</script>
+
+</body>
+</html>
